@@ -1,4 +1,4 @@
-package CucumberJoueur.TP3;
+package cucumber.TP3;
 
 public class Joueur {
 	private int numero;

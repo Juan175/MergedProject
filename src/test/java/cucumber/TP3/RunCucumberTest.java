@@ -1,4 +1,4 @@
-package CucumberJoueur.TP3;
+package cucumber.TP3;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;

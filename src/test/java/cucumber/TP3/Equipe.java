@@ -1,4 +1,4 @@
-package CucumberJoueur.TP3;
+package cucumber.TP3;
 
 import java.util.ArrayList;
 import java.util.List;
