@@ -78,7 +78,7 @@ public class Stepdefs {
 	this.Prince=arg1;
 }
 
-
+/*
     @When("^I ask whether she is alive$")
     public void i_ask_whether_she_is_alive() {
         this.actualAnswer = IsAlive.isAlive(fruit);
@@ -93,7 +93,7 @@ public class Stepdefs {
     public void i_should_be_told(String expectedAnswer) {
         assertEquals(expectedAnswer, actualAnswer);
     }
-
+ */
     
 	
 

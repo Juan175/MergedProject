@@ -1,7 +1,7 @@
 package cucumber.TP3;
 
 //Interface implementée par toutes les classes souhaitant avoir des observateurs à leur écoute
-public interface Observable <Match> {
+public interface Observable {
 	//Méthode permettant d'ajouter un  observateur
 	public void ajouterObservateur(Observateur o);
 	// Supprimer un observateur

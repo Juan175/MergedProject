@@ -11,7 +11,7 @@ import java.util.List;
  * @version (un numero de version ou une date)
  */
 @SuppressWarnings("unused")
-public class Prince
+public class Prince implements Observateur
 {
 	// variables d'instance - remplacez l'exemple qui suit par le v�tre
     private String nom;
@@ -106,4 +106,11 @@ public class Prince
     	this.estMarie=true;
     	blancheNeige.setEstMariee(true);
     }
+
+	@Override
+	public void actualiser(Match match) {
+		// TODO Auto-generated method stub
+        System.out.println("Visualisé par : "+this.nom+ " La date du match : "+match.getDateMatch()+"  Les deux équipes : "+match.getEquipe1()+" et "+match.getEquipe2());
+
+	}
 }

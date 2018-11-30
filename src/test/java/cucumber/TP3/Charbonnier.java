@@ -1,6 +1,6 @@
 package cucumber.TP3;
 
-public class Charbonnier {
+public class Charbonnier implements Observateur {
     
 	private String name;
 	private int Charbon;
@@ -99,6 +99,13 @@ public class Charbonnier {
 
 		public void setEtat2(int etat2) {
 			Etat2 = etat2;
+		}
+
+		@Override
+		public void actualiser(Match match) {
+			// TODO Auto-generated method stub
+            System.out.println("La date du match : "+match.getDateMatch()+"  Les deux équipes : "+match.getEquipe1()+" et "+match.getEquipe2());
+
 		}
 
 }

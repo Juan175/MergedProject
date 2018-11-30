@@ -12,7 +12,7 @@ import java.util.List;
  */
 
 @SuppressWarnings("unused")
-public class Princesse
+public class Princesse implements Observateur
 {
     // variables d'instance 
     private String nom;
@@ -119,14 +119,16 @@ public class Princesse
 		if(unfruit.equals("apple"))
 		{
 			this.mangerPommeEnsorcelee();
-		}
-		
-		
+		}	
 	}
-    
     public String afficherPremierEnfant()
     {
     	return (enfants.get(0).getNomEnfant());
     }
+	@Override
+	public void actualiser(Match match) {
+		// TODO Auto-generated method stub
+        System.out.println("La date du match : "+match.getDateMatch()+"  Les deux équipes : "+match.getEquipe1()+" et "+match.getEquipe2());
+	}
     
 }
